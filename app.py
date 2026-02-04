@@ -32,5 +32,6 @@ demo = gr.Interface(
     examples=[["examples/" + e] for e in os.listdir("examples")],
     title="FGVC Aircraft Identifier ✈️",
     description="Identifies 100 aircraft variants."
+    cache_examples=False
 )
 demo.launch()
