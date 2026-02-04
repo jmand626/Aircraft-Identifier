@@ -31,7 +31,7 @@ demo = gr.Interface(
     outputs=[gr.Label(num_top_classes=3, label="Top 3 Predictions"), gr.Number(label="Time (s)")],
     examples=[["examples/" + e] for e in os.listdir("examples")],
     title="FGVC Aircraft Identifier ✈️",
-    description="Identifies 100 aircraft variants."
+    description="Identifies 100 aircraft variants.",
     cache_examples=False
 )
 demo.launch()
